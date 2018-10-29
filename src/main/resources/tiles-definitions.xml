@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <!-- Template -->
+    <definition name="bos.template" template="/template/template.jsp">
+        <put-attribute name="header" value="/template/header.jsp"/>
+        <put-attribute name="menu" value="/template/menu.jsp"/>
+        <put-attribute name="body" value="/template/body.jsp"/>
+        <put-attribute name="footer" value="/template/footer.jsp"/>
+    </definition>
+	
+    <!-- Popup Template -->
+    <definition name="bos.template.popup" template="/template/template.jsp">
+        <put-attribute name="body" value="/template/body.jsp"/>
+    </definition>
+	
+    <!-- Error -->
+    <definition name="bos.error" extends="bos.template">
+        <put-attribute name="body" value="/page/error.jsp"/>
+    </definition>
+	
+    <!-- Login -->
+    <definition name="login" template="/loginAdmin.jsp">
+    </definition>
+    <definition name="login.welcome" extends="bos.template">
+        <put-attribute name="body" value="/page/welcome.jsp"/>
+    </definition>
+    
+    <!-- File upload -->
+    <definition name="file.upload" extends="bos.template">
+        <put-attribute name="body" value="/page/fileUploadForm.jsp"/>
+    </definition>
+    
+    <!-- Meeting Room -->
+    <definition name="booking.history" extends="bos.template">
+        <put-attribute name="body" value="/page/meetingRoom/bookingHistory.jsp"/>
+    </definition>
+    
+    <!-- Group -->
+    <definition name="group.createGroup" extends="bos.template">
+        <put-attribute name="body" value="/page/group/createGroup.jsp"/>        
+    </definition>
+    
+     <definition name="group.deleteGroup" extends="bos.template">
+        <put-attribute name="body" value="/page/group/deleteGroup.jsp"/>        
+    </definition>
+    
+     <definition name="group.updateGroup" extends="bos.template">
+        <put-attribute name="body" value="/page/group/updateGroup.jsp"/>        
+    </definition>
+    
+     <definition name="group.editUpdateGroup" extends="bos.template">
+        <put-attribute name="body" value="/page/group/editGroup.jsp"/>        
+    </definition>
+    
+    <!-- User Authorize -->
+    <definition name="userauth.init" extends="bos.template">
+        <put-attribute name="body" value="/page/userAuthorize/AddUser.jsp"/>
+    </definition>
+    <definition name="userauth.initDelete" extends="bos.template">
+        <put-attribute name="body" value="/page/userAuthorize/DeleteUser.jsp"/>
+    </definition>
+    <definition name="userauth.initCustomerUserAuthorize" extends="bos.template">
+        <put-attribute name="body" value="/page/userAuthorize/searchUserAuthorize.jsp"/>
+    </definition>
+    <definition name="userauth.initEditCustomerUserAuthorize" extends="bos.template">
+        <put-attribute name="body" value="/page/userAuthorize/editUserAuthorize.jsp"/>
+    </definition>
+    
+    <!-- Star -->
+    <definition name="star.setByGroup" extends="bos.template">
+        <put-attribute name="body" value="/page/Star/setStarByGroup.jsp"/>
+    </definition>
+    
+    <definition name="star.setByUser" extends="bos.template">
+        <put-attribute name="body" value="/page/Star/setStarByUser.jsp"/>
+    </definition>
+    
+    <definition name="star.createReward" extends="bos.template">
+        <put-attribute name="body" value="/page/Star/createReward.jsp"/>
+    </definition>
+    
+    <definition name="star.rewardsList" extends="bos.template">
+        <put-attribute name="body" value="/page/Star/rewardsList.jsp"/>        
+    </definition>
+    
+    <definition name="star.searchRedeemReward" extends="bos.template">
+        <put-attribute name="body" value="/page/Star/searchRedeemReward.jsp"/>        
+    </definition>
+    
+    <!-- HR -->
+    <definition name="create.document" extends="bos.template">
+        <put-attribute name="body" value="/page/hr/createDocument.jsp"/>        
+    </definition>
+        
+    <definition name="requestdoc.history" extends="bos.template">
+        <put-attribute name="body" value="/page/hr/requestDocHistory.jsp"/>        
+    </definition>
+    
+    <!-- ContactRepair Room -->
+    <definition name="contactrepair.history" extends="bos.template">
+        <put-attribute name="body" value="/page/ContactRepair/contactRepair.jsp"/>
+    </definition>
+    
+    
+    <!-- user profile -->
+    <definition name="contactrepair.history" extends="bos.template">
+        <put-attribute name="body" value="/page/Profile/userList.jsp"/>
+    </definition>
+    
+    
+     <definition name="event.createEvent" extends="bos.template">
+        <put-attribute name="body" value="/page/Event/CreateEvent.jsp"/>
+    </definition>
+    
+     <definition name="event.eventList" extends="bos.template">
+        <put-attribute name="body" value="/page/Event/EventList.jsp"/>
+    </definition>
+    
+      <definition name="homepage" extends="bos.template">
+        <put-attribute name="body" value="/page/homepage.jsp"/>
+    </definition>
+    
+</tiles-definitions>

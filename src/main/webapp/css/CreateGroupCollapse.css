@@ -1,0 +1,149 @@
+#Submit{
+    background-color: #555555 ;
+    color : #ffffff;
+}
+.block1 .bd{   
+    border: #6c757d 1px solid  ;
+
+}
+/*CHECKBOX BLOCK2*/
+
+.form-check .custom-control-label::after,
+.form-check .custom-control-label::before {
+    height: 18px;
+    width: 18px;
+}
+.form-check .custom-control-label::before {
+    background-color: #ffffff;
+    border: #000 1px solid;
+
+}
+
+/*.form-check .custom-control-label:checked ~ .custom-control-label::before {
+    background-color: #428BCA !important;
+    border: #ffffff 2px solid;
+    box-shadow: 0 0 0 1px #428BCA;
+}*/
+
+input[type="checkbox"]:hover + label:before {
+
+    background: #E0FFFF;
+    box-shadow: 2px 2px 2px grey;
+
+}
+
+input[type="checkbox"]:hover + label {
+    color: #428BCA;
+
+}
+input[type="checkbox"]:checked ~ .custom-control-label::before {
+    background-color: #428BCA !important;
+    border: #ffffff 2px solid;
+    box-shadow: 0 0 0 1px #428BCA;
+}
+
+input[type="checkbox"]:checked + label {
+    color: #428BCA;
+
+}
+/*font color bosmenu*/
+input[name="BosMenuCheckBox"]:checked + label{
+    color:#ffffff;
+
+}
+input[name="BosMenuCheckBox"]:hover + label {
+    color: red;
+
+}
+
+input[name="BosMenuCheckBox"]:checked ~ .custom-control-label::before {
+    background-color: #428BCA !important;
+    border: #ffffff 2px solid;
+    box-shadow: 0 0 0 1px #428BCA;
+}
+
+/*.grouphead + input[type="checkbox"]{
+   
+    background-color: red;
+
+    
+}*/
+/*.grouphead input:focus{
+    
+     border: red 2px solid  
+    
+}
+*/
+input[name="grouphead"] .custom-control-label {
+
+
+    content: "-";  
+    font-weight: bold;
+    line-height: 50%;
+    text-align: center;
+    background-color: white !important;
+    border: #ffffff 1px solid;
+    box-shadow: 0 0 0 1px #428BCA;
+
+}
+
+
+input[name="grouphead"]:not(:checked) ~ .custom-control-label::before {
+
+    content: "+";
+    font-size: .8em;
+    font-weight: normal;
+    line-height: 85%;
+    text-align: center;
+    border-radius: 5px;
+
+
+}
+
+
+input[name="grouphead"]:checked ~ .custom-control-label::before {
+
+
+    content: "-";  
+    font-weight: bold;
+    line-height: 50%;
+    color: #ffffff;
+    text-align: center;
+    /*    
+    */    background-color: #428BCA !important;
+    border: #ffffff 1px solid;
+    box-shadow: 0 0 0 1px #428BCA;
+
+    border-radius: 5px;
+
+
+}
+
+
+/*//test border*/
+/*.mystyle{
+    background-color:  red;
+    
+}*/
+
+
+
+
+/*.form-check .custom-control-label::after,
+.form-check .custom-control-label::before {
+    height: 18px;
+    width: 18px;
+}
+.form-check .custom-control-label::before {
+    background-color: #ffffff;
+    border: #000 1px solid;
+
+}
+*/
+
+/*input[name="checkallMobilee"]:hover + label {
+    color: red;
+}
+
+
+*/
